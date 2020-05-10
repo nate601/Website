@@ -1,0 +1,8 @@
+build-last-errors="[]"
+build-last-errors-base-dir=""
+build-last-outputs="[{\"output\":\"==> rmarkdown::render_site(encoding = 'UTF-8')\\n\\n\",\"type\":0},{\"output\":\"Rendering content/post/2019-05-09-weekly-game-jam-93.Rmd\\r\\n\",\"type\":2},{\"output\":\"Building sites … WARN 2019/05/19 21:47:22 Page's .Hugo is deprecated and will be removed in a future release. Use the global hugo function.\\nWARN 2019/05/19 21:47:22 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.\\nWARN 2019/05/19 21:47:22 Page's .RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like: \\n    {{ with .OutputFormats.Get \\\"RSS\\\" }}{{ .RelPermalink }}{{ end }}.\\n\\n                   | EN  \\n+------------------+----+\\n  Pages            | 13  \\n  Paginator pages  |  0  \\n  Non-page files   |  0  \\n  Static files     | 11  \\n  Processed images |  0  \\n  Aliases          |  0  \\n  Sitemaps         |  1  \\n  Cleaned          |  0  \\n\\nTotal in 27 ms\\n\",\"type\":1},{\"output\":\"\\r\\nOutput created: public/index.html\\r\\n\",\"type\":2}]"
+compile_pdf_state="{\"errors\":[],\"output\":\"\",\"running\":false,\"tab_visible\":false,\"target_file\":\"\"}"
+files.monitored-path=""
+find-in-files-state="{\"handle\":\"\",\"input\":\"\",\"path\":\"\",\"regex\":true,\"results\":{\"file\":[],\"line\":[],\"lineValue\":[],\"matchOff\":[],\"matchOn\":[]},\"running\":false}"
+imageDirtyState="1"
+saveActionState="-1"
