@@ -20,9 +20,9 @@ Age: 20
 
 Drink/Smoke: No
 
-Available times: Afternoon - Night
+Available times: Evening - Night
 
-Profession: Student / Pharmacy Technician
+Profession: Pharmacy Technician / Student
 
 
 # Sharables [^1]
@@ -33,9 +33,7 @@ Recent Game(s) -
 
 * [Dwarf Fortress](http://www.bay12games.com/dwarves/)
 
-* [Cultist Simulator](https://store.steampowered.com/app/718670/Cultist_Simulator/)
-
-* [Risk of Rain 2](https://store.steampowered.com/app/632360/Risk_of_Rain_2/)
+* [VALORANT](https://beta.playvalorant.com/en-us/)
 
 Recent Anime(s) - 
 
@@ -45,18 +43,12 @@ Recent Anime(s) -
 
 Recent Song(s) - 
 
-* [wish you were gay by Billie Eilish](https://open.spotify.com/track/3Fj47GNK2kUF0uaEDgXLaD?si=ZUIvgyqSQEOXmxJFq46ftQ)
+* [Making a Door Less Open by Car Seat Headrest](https://open.spotify.com/album/1tuoWW0TpoI5oacIjwYBdL?si=qct-bFDSTZCbr37EPgHFnA)
 
-* [I am not a Robot by MARINA](https://open.spotify.com/track/4Og5nDOUVu3ZrYQP4Ungyg?si=-DzMUt4YTKSfwhVXW9KS6Q)
+* [No Children by The Mountain Goats](https://open.spotify.com/track/4XpQ2F8NtzWMZ3g5t8qv2Y?si=7vh33hz3T1uLfhqHcU_-Sw)
 
 Craft Skills - Bookbinding, Calligraphy, Embroidery  
 
-Hobbies - Rollerblading, Programming, World Building, Linguistics
-
-# Squicks / Triggers
-
-Squicks/Mild Phobias - Gore, Horror
-
-Triggers/Hard Phobias - Abuse
+Hobbies - In-line Skating, Programming, World Building, Linguistics
 
 [^1]: Format courtesy of the /r/Arlington discord server
