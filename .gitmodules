@@ -1,3 +1,6 @@
 [submodule "Website/public"]
 	path = Website/public
 	url = https://github.com/nate601/nate601.github.io.git
+[submodule "public"]
+	path = public
+	url = https://github.com/nate601/nate601.github.io.git
