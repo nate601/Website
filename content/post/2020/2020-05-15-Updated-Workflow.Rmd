@@ -1,0 +1,28 @@
+---
+title: Updated Workflow
+author: Nathan Button
+date: '2020-05-15'
+slug: Updated Workflow
+categories: []
+tags: []
+---
+
+My development environment has once again changed dramatically[^1], and I would like to record these changes and compare them to other years.
+
+# Operating System and Window Managers
+For most of my development activities I use a Debian environment.  I use a server hosted on [DigitalOcean](https://www.digitalocean.com/), and SSH into it so that my development environment is consistent no matter which device I am using.  Originally, I tried using a window manager such as i3 and dwm, but I have found that, due to speed concerns, using SSH with either Vim splits or tmux panes is preferable.
+
+# Shell
+I use the [Fish](https://fishshell.com/) shell, which although it is not POSIX compliant, is far more accessible to a high level developer such as myself.  Using the [oh my fish!](https://github.com/oh-my-fish/oh-my-fish) software I have installed a fuzzy-finding program to increase the speed that I can access files.  I have several abbreviations set within the shell, such as v to launch my editor, and sl to provide a more in-depth directory listing.
+
+# Language
+.NET Core (soon to be .NET 5) is wonderful for my programming needs.  I can develop software in my environment of choice and deploy it to any possible setup that I might use. .NET Core has a plug-in that can run \*.csx files as scripts, as well as open a REPL engine.
+
+# Editor
+My current editor of choice is Neovim.  I use the OmniSharp plug-in to enable features such as autocompletion and automatic code refactoring.  This plug-in (which only executes when C# files are being edited) creates an IDE-like experience, replacing the bloat of the original Visual Studio.  My Neovim setup has many similarities to my Visual Studio Code setup, even down to the theming.  I also have several useful bindings, such as ;; to append a semicolon to the end of the line.  
+
+Copies of my dotfiles can be found on my Github.
+
+
+[^1]: Changes about which I have previously written in [this article](https://nate601.me/2019/06/14/terminal-workflow/).
+
