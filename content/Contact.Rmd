@@ -1,0 +1,25 @@
+---
+title: Contact Me 
+author: Nathan Button
+date: '2021-12-18'
+slug: Contact
+categories: []
+tags: []
+---
+
+<center>
+
+[Blog (You are Here)](https://nate601.me)
+
+[Email](mailto://nathan@nate601.me)
+
+[Reddit](https://www.reddit.com/user/nate601)
+
+[Snapchat](https://www.snapchat.com/add/nbutton601)
+
+[Instagram](https://www.instagram.com/nathanb601)
+
+[Twitter](https://www.twitter.com/nate601)
+
+</center>
+
