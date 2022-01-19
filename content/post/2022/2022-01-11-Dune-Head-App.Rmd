@@ -1,7 +1,7 @@
 ---
 title: 'Post Mortem: Dune Head App'
 author: Nathan Button
-date: '2021-01-11'
+date: '2022-01-11'
 slug: post-mortem-dune-head-app
 categories: []
 tags: []
