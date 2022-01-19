@@ -1,0 +1,32 @@
+---
+title: 'Post Mortem: Dune Head App'
+author: Nathan Button
+date: '2021-01-11'
+slug: post-mortem-dune-head-app
+categories: []
+tags: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div class="figure">
+<img src="http://xbb.home.nate601.me/FABe9/kILOFArE82.png/raw" height="300" alt="" />
+<p class="caption">Dune this, dune that. I need some head</p>
+</div>
+<div class="figure">
+<img src="http://xbb.home.nate601.me/FABe9/Fibehito37.png/raw" height="150" alt="" />
+<p class="caption">An example of the bot in action</p>
+</div>
+<p>I firmly believe this project is the brainchild of my sleepless nights and inappropriate internet memes. The dune-head-app project is based on an image macro that I found, disparaging the relatively recent movie release of Dune.</p>
+<div id="thoughts-on-rust" class="section level2">
+<h2>Thoughts on rust</h2>
+<p>This program was my first attempt at using the rust programming language. There are many things that I like about rust, such as the portability and lack of a need for garbage collection. There was a bit of a learning curve in the
+syntax and my way of thinking. Rust’s concept of variable ownership (while it gives it it’s powerful memory promises) was confusing to me when I first approached it. In addition, I am still learning the difference between “&amp;str”, “String” and “&amp;String”.
+Another thing which I dislike about rust is the necessity of third-party crates for some features that I am used to having in the dotnet framework, such as serialization and the like.</p>
+</div>
+<div id="dune-head-app" class="section level2">
+<h2>Dune-Head-App</h2>
+<p>This app pulls the top searches from the google trends website. This website lists the top trends within a certain demographic, as well as images and news articles about the trends. I scrape the RSS feed of the US trending topics, and I parse it using the
+serde_xml_rs library. I then choose a random topic from these topics, and send a HTTP POST request to a Discord webhook. The webhook is specified in an environment variable, so that it could be easily changed during testing and it can be kept separate from the code. I have this bot running on my home computer in a cron job at 9 am every morning in order to keep my discord server up to date on current events. Truly there is no better way than this.</p>
+</div>
