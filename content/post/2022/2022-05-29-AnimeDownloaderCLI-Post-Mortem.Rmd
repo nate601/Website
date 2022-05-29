@@ -1,7 +1,7 @@
 ---
 title: 'Post Mortem: Anime Downloader CLI'
 author: Nathan Button
-date: '2022-01-11'
+date: '2022-05-29'
 slug: animedownloader-cli-post-mortem
 categories: []
 tags: []
