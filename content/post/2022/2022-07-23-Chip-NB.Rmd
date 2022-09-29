@@ -1,0 +1,108 @@
+---
+title: 'Post Mortem: Chip-N8'
+author: Nathan Button
+date: '2022-07-23'
+slug: post-mortem-chip-eight
+categories: []
+tags: []
+---
+
+This is the third entry in the monthly programming and blogging challenge that I have created for myself.
+This month I decided that I would create a chip-8 emulator.
+
+### Chip-8 and Project Scope
+
+To quote Cowgod's technical reference:
+
+> Chip-8 is a simple, interpreted, programming language which was first used on some do-it-yourself computer systems in the late 1970s and early 1980s. The COSMAC VIP, DREAM 6800, and ETI 660 computers are a few examples. These computers typically were designed to use a television as a display, had between 1 and 4K of RAM, and used a 16-key hexadecimal keypad for input. The interpreter took up only 512 bytes of memory, and programs, which were entered into the computer in hexadecimal, were even smaller. [^1]
+
+I created a chip-8 emulator (not entirely to spec) to play the space invaders rom by David Winter.
+Since I was working extra this month at the district office, I wanted to have a more abbreviated project, so I implemented the emulator within a couple of weekends so that I could be free to relax during the week (this did not happen due to work stress unfortunately.)
+I did successfully create the chip-8 emulator!
+This emulator does play the space invaders rom, but there are several operations that I did not implement.
+For example, the random number generator always returns the number four, and the usual audio cues from the game are silent.
+
+### Display Implementation
+
+The chip-8 uses a 64x32 1-bit display, and it is represented in code as an array of bytes.
+Originally, I was going to use the different bits of the byte to represent fading of the pixel, but I decided that it looked stupid, so I removed that.
+When a pixel is written to the display, it is written into a separate "buffer" array before being copied into the actual display.
+This allows the changes to take place on operation boundaries, instead of occurring in the middle of an operation.
+The program loop clears the screen when the buffer is "tainted" and then moves the data from the buffer to the display array.
+Then the display array is mapped to either a white or black emoji depending on the value.
+The mapping is then printed to the screen.
+This was the first time that I had implemented my own Display trait for a struct in Rust, and I find it relatively convoluted compared to overriding virtual functions in C#.
+Coming from a language that is so much more entwined with OOP might be affected the speed at which I learn Rust.
+
+### Operations, Instructions, OpCodes, and OperationComponents: Oh my!
+
+To parse each Instruction from the binary rom file, I keep a Vec of valid operations.  These are defined as being comprised of an array of OperationComponents and an OpCode.
+OpCode is simply an enum listing the different operations (this gives me a way to reference them at compile time).
+OperationComponent is an enum that can have several types representing the bytes in the instruction.
+An OperationComponent is either a Literal (meaning that it represents a hexadecimal nibble), or it can be a variable number of nibbles (up to 3).
+As chip-8 instructions are all two bytes long, there can be no more than four operation components per each Operation.
+An Instruction is the actual instruction that was read from the rom.
+The instruction can then be matched with an Operation.
+The instruction also provides methods that can be used to read the variable nibbles of the instruction.
+
+#### Matching an Instruction to an OpCode
+
+To match an instruction to an OpCode, I iterate through the Vec of Operations.
+On each of these Operations, I check the definition of OperationComponents.
+By iterating through the definition and comparing the equivalent Instruction nibble, I can narrow down the possible instructions.
+With a properly implemented list of Operations, there should only be one matching Operation, and therefore only one matching OpCode.
+I then return this OpCode, which should match the formatting of the current Instruction.
+Next I run different code depending on which OpCode was returned.
+Each of the instructions are documented in my below resources. 
+
+```rust
+    pub fn get_op_code(instruction: &Instruction) -> Option<OpCode>
+    {
+        let operations = Operation::get_operations();
+        let instruction_bits = instruction.get_bits();
+        let matches = operations
+            .iter()
+            .filter(|cur_op| {
+                let mut i = 0usize;
+                for comp in &cur_op.definition
+                {
+                    match comp
+                    {
+                        OperationComponent::Literal(c) =>
+                        {
+                            if instruction_bits[i] != *c
+                            {
+                                return false;
+                            }
+                            i += 1;
+                        }
+                        OperationComponent::Nnn => i += 3,
+                        OperationComponent::N => i += 1,
+                        OperationComponent::X => i += 1,
+                        OperationComponent::Y => i += 1,
+                        OperationComponent::Kk => i += 2,
+                    }
+                }
+                true
+            })
+            .map(|f| f.op_code)
+            .collect::<Vec<OpCode>>();
+        matches.first().copied()
+    }
+```
+
+### Variations from the Spec.
+
+As stated earlier, there are a few points where my code differs from the spec for the Chip-8.
+This was mostly due to something being either too boring or too time-consuming to implement.
+The first thing that I was too lazy to implement was the sound buzzer. 
+It was unnecessary for the gameplay in the target game.
+I suppose it could be added trivially in the countdown thread.
+I've never really worked on a project with audio in rust before though... perhaps it would be interesting to work on something with an audio aspect in the upcoming months!
+Something I was unable to complete due to the time constraints I put on this project is the random number generator.
+Now it is set to always return the number four as an homage to the XKCD implementation.
+My original intent was to write an implementation of the XORShift pseudo random number generator algorithm.
+I have previously implemented it in a project written in assembly, and it is quite trivial in implementation!
+I would have implemented this, but I did not have the time or energy to!
+
+[^1]: http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
