@@ -1,43 +1,40 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "nate601's blag"
-theme = "hugo-lithium"
-googleAnalytics = "UA-140778365-1"
-disqusShortname = ""
+theme = "hugo-blog-awesome"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
+post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name="About Me"
-    url ="/AboutMe/"
+name = "About Me"
+url = "/AboutMe/"
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/nate601"
+name = "GitHub"
+url = "https://github.com/nate601"
 [[menu.main]]
-    name = "Contact"
-    url = "/Contact/"
+name = "Contact"
+url = "/Contact/"
 
 
 [params]
-    description = "nate601's blag"
+description = "nate601's blag"
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml", "csharp" ]
-    highlightjsTheme = "github"
+# options for highlight.js (version, additional languages, and theme)
+highlightjsVersion = "9.12.0"
+highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+highlightjsLang = ["r", "yaml", "csharp", "rust", "python"]
+highlightjsTheme = "github"
 
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
+MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+MathJaxVersion = "2.7.5"
 
-    # path to the favicon, under "static"
-    favicon = "favicon.ico"
+# path to the favicon, under "static"
+favicon = "favicon.ico"
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
-
+[params.logo]
+url = "logo.png"
+width = 50
+height = 50
+alt = "Logo"
