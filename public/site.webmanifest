@@ -1,7 +1,7 @@
 {
     "name": "nate601's blag",
     "short_name": "nate601's blag",
-    "start_url": "/",
+    "start_url": "//localhost:1313/",
     "theme_color": "#434648",
     "background_color": "#ffffff",
     "display": "standalone",

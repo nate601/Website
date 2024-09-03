@@ -10,12 +10,15 @@ post = "/:year/:month/:day/:slug/"
 [[menu.main]]
 name = "About Me"
 url = "/AboutMe/"
+weight = 100
 [[menu.main]]
 name = "GitHub"
 url = "https://github.com/nate601"
+weight = 300
 [[menu.main]]
 name = "Contact"
 url = "/Contact/"
+weight = 200
 
 
 [params]
@@ -33,8 +36,12 @@ MathJaxVersion = "2.7.5"
 # path to the favicon, under "static"
 favicon = "favicon.ico"
 
-[params.logo]
-url = "logo.png"
-width = 50
-height = 50
-alt = "Logo"
+[Languages.en]
+languageName = "English"
+languageCode = "en-us"
+[Languages.en.params]
+goToTop = true
+[Languages.en.params.author]
+intro = "Nathan's Blag"
+name = "Nathan Button"
+descripton = "testing one two three"
