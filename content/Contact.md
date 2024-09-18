@@ -1,7 +1,6 @@
 ---
-title: Contact Me 
+title: Contact Me
 author: Nathan Button
-date: '2021-12-18'
 slug: Contact
 categories: []
 tags: []
@@ -22,4 +21,3 @@ tags: []
 [Twitter](https://www.twitter.com/nate601)
 
 </center>
-
