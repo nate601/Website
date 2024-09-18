@@ -8,15 +8,17 @@ tags: []
 
 # Introduction
 
-- Name: Nathan Button, CPhT
+- Name: Nathan Button, CPhT[^1] [^2]
+  [^1]: PTCB Certification #30045523
+  [^2]: TSBP Registration #261273
 - Contact Information: [Contact Me](https://www.nate601.me/contact)
 - Age: 25
 - Available times: Evening — Night
 - Profession: Administrative Assistant at Walgreens
 
-# Sharables [^1]
+# Sharables [^3]
 
-[^1]: Format courtesy of the /r/Arlington discord server
+[^3]: Format courtesy of the /r/Arlington discord server
 
 - Gaming Style — Strategy or 4x mainly, but I'll play whatever my friends are playing
 - Recent Game(s)
