@@ -25,11 +25,14 @@ tags: []
   - [HighFleet](http://koshutin.com/)
   - [Danganronpa Decadence](https://www.danganronpa.com/switch/en/)
 - Recent Anime(s)
-  - [Mob Psycho 100](https://www.kitsu.io/anime/mob-psycho-100)
-  - [Kaguya-sama: Love Is War](https://www.kitsu.io/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen)
+  - [Kusuriya no Hitorigoto](https://kitsu.app/anime/kusuriya-no-hitorigoto)
+  - [Sousou no Frieren](https://kitsu.app/anime/sousou-no-frieren)
+- Recent Web Novel(s)
+  - [Seoul Object Story (KR)](https://www.novelupdates.com/series/seoul-object-story)
+  - [I Became A Ghost In A Horror Game (KR)](https://www.novelupdates.com/series/i-became-a-ghost-in-a-horror-game/)
 - Recent Song(s)
-  - [Making a Door Less Open by Car Seat Headrest](https://open.spotify.com/album/1tuoWW0TpoI5oacIjwYBdL?si=qct-bFDSTZCbr37EPgHFnA)
-  - [No Children by The Mountain Goats](https://open.spotify.com/track/4XpQ2F8NtzWMZ3g5t8qv2Y?si=7vh33hz3T1uLfhqHcU_-Sw)
+  - [Beach Life-In-Death by Car Seat Headrest](https://open.spotify.com/track/27aQH9DIJ3ozx3dC91Hhjg?si=6cd953bd666a4e93)
+  - [Unsweetened Lemonade by Amélie Farren](https://open.spotify.com/track/7L3DFvnpn12NPHQf7yq4W2?si=f12fd6f8473742fe)
 - Hobbies
   - Programming
   - World Building
