@@ -1,0 +1,5 @@
+{{$t2 := time.AsTime "1999-05-19"}}
+{{ $age := time.Now.Sub $t2 }}
+{{ $adgeHours := $age.Hours }}
+{{ $ageDays := math.Div $adgeHours 8766}}
+{{ math.Floor $ageDays }}

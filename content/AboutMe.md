@@ -12,7 +12,7 @@ tags: []
   [^1]: PTCB Certification #30045523
   [^2]: TSBP Registration #261273
 - Contact Information: [Contact Me](https://www.nate601.me/contact)
-- Age: 25
+- Age: {{< age >}}
 - Available times: Evening — Night
 - Profession: Administrative Assistant at Walgreens
 
