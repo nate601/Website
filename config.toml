@@ -42,6 +42,6 @@ languageCode = "en-us"
 [Languages.en.params]
 goToTop = true
 [Languages.en.params.author]
-intro = "Nathan's Blag"
+intro = "Nate601's Blag"
 name = "Nathan Button"
-descripton = "testing one two three"
+description = ""
