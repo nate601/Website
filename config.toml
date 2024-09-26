@@ -1,12 +1,18 @@
 baseurl = "/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "nate601's blag"
 theme = "hugo-blog-awesome"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+defaultContentLanguage = 'en-us'
 
 [permalinks]
 post = "/:year/:month/:day/:slug/"
 
+# [[menu.main]]
+# pageRef = "/"
+# name = 'Home'
+# url = '/'
+# weight = 10
 [[menu.main]]
 name = 'Posts'
 url = '/post/'
@@ -16,13 +22,19 @@ name = "About Me"
 url = "/AboutMe/"
 weight = 100
 [[menu.main]]
-name = "GitHub"
-url = "https://github.com/nate601"
-weight = 300
-[[menu.main]]
 name = "Contact"
 url = "/Contact/"
 weight = 200
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/nate601"
+weight = 300
+
+[Languages.en-us]
+languageName = "English"
+languageCode = 'en-US'
+contentDir = "content"
+weight = 1
 
 
 [params]
@@ -42,12 +54,9 @@ favicon = "favicon.ico"
 rssFeedDescription = "full"
 mainSection = ['post']
 
-[Languages.en]
-languageName = "English"
-languageCode = "en-us"
-[Languages.en.params]
+[Languages.en-us.params]
 goToTop = true
-[Languages.en.params.author]
+[Languages.en-us.params.author]
 intro = "Nate601's Blag"
 name = "Nathan Button"
 description = "Please see below for my delusional ramblings!"
