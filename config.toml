@@ -5,6 +5,9 @@ theme = "hugo-blog-awesome"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 defaultContentLanguage = 'en-us'
 
+[markup]
+[markup.highlight]
+noClasses = false
 [permalinks]
 post = "/:year/:month/:day/:slug/"
 
