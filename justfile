@@ -19,4 +19,5 @@ update-sharables:
   git commit -a -m "Update-Sharables {{datetime('%F')}}"
   git push
   git stash pop
+  exit 0
   
