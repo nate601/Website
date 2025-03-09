@@ -1,5 +1,6 @@
 sharableDir := '../sharablesUpdater'
 sharableOutputFile := `pwd` / 'data' / 'sharables.json'
+websiteDir := `pwd`
 
 build: update-sharables
   @hugo
@@ -13,7 +14,7 @@ update-sharables:
   cd {{sharableDir}}
   .venv/bin/python3 -m main
   cp sharables.json {{sharableOutputFile}}
-  cd `pwd`
+  cd {{websiteDir}}
   git add {{sharableOutputFile}}
   git commit -a -m "Update-Sharables {{datetime('%F')}}"
   git push
