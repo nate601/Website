@@ -14,7 +14,7 @@ tags: []
 - Contact Information: [Contact Me](https://www.nate601.me/contact)
 - Age: {{< age >}}
 - Available times: Evening — Night
-- Profession: Administrative Assistant at Walgreens
+- Profession: Senior Business Analyst at Walgreens
 
 # Sharables
 
@@ -23,7 +23,7 @@ tags: []
 - Recent Anime(s)
   - [Kusuriya no Hitorigoto](https://kitsu.app/anime/kusuriya-no-hitorigoto)
   - [Sousou no Frieren](https://kitsu.app/anime/sousou-no-frieren)
-- Recent Web Novel(s)
+- Recent (Web) Novel(s)
   - [Game of the World Tree (CN)](https://www.novelupdates.com/series/game-of-the-world-tree/)
   - [Seoul Object Story (KR)](https://www.novelupdates.com/series/seoul-object-story)
   - [I Became A Ghost In A Horror Game (KR)](https://www.novelupdates.com/series/i-became-a-ghost-in-a-horror-game/)
