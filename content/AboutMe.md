@@ -8,9 +8,10 @@ tags: []
 
 # Introduction
 
-- Name: Nathan Button, CPhT[^1] [^2]
+- Name: Nathan Button, CPhT[^1] [^2] [^3]
   [^1]: PTCB Certification #30045523
   [^2]: TSBP Registration #261273
+  [^3]: IDFPR Registration #049323878
 - Contact Information: [Contact Me](https://www.nate601.me/contact)
 - Age: {{< age >}}
 - Available times: Evening — Night
