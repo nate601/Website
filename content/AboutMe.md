@@ -20,12 +20,12 @@ tags: []
 
 {{% sharablenew %}}
 
-- Recent Anime(s)
-  - [Kusuriya no Hitorigoto](https://kitsu.app/anime/kusuriya-no-hitorigoto)
-  - [Sousou no Frieren](https://kitsu.app/anime/sousou-no-frieren)
-
-- Hobbies
-  - Programming
-  - World Building
-  - Linguistics
-  - In-line Skating & Ice Skating
+<!-- - Recent Anime(s) -->
+<!--   - [Kusuriya no Hitorigoto](https://kitsu.app/anime/kusuriya-no-hitorigoto) -->
+<!--   - [Sousou no Frieren](https://kitsu.app/anime/sousou-no-frieren) -->
+<!---->
+<!-- - Hobbies -->
+<!--   - Programming -->
+<!--   - World Building -->
+<!--   - Linguistics -->
+<!--   - In-line Skating & Ice Skating -->
