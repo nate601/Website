@@ -14,7 +14,8 @@ tags: []
   [^3]: IDFPR Registration #049323878
 - Contact Information: [Contact Me](https://www.nate601.me/contact)
 - Age: {{< age >}}
-- Available times: Evening — Night
+<!-- - Available times: Evening — Night -->
+- Time Zone: America/Chicago
 - Profession: Senior Business Analyst at Walgreens
 
 # Sharables
