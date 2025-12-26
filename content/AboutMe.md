@@ -18,7 +18,7 @@ tags: []
 
 # Sharables
 
-{{% sharableNew %}}
+{{% sharablenew %}}
 
 - Recent Anime(s)
   - [Kusuriya no Hitorigoto](https://kitsu.app/anime/kusuriya-no-hitorigoto)
