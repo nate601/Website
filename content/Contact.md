@@ -7,7 +7,7 @@ tags: []
 ---
 
 - [Blog (You are Here)](https://nate601.me)
-- [Email](mailto://nathan@nate601.me)
+- [Email](mailto:nathan@nate601.me)
 - [LinkedIn](https://www.linkedin.com/in/nathan-button)
 - [Reddit](https://www.reddit.com/user/nate601)
 - [Snapchat](https://www.snapchat.com/add/nbutton601)
