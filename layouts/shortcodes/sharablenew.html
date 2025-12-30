@@ -5,5 +5,5 @@
   * [{{.name}}]({{.link}}){{else}}
   * No recently played songs (on Spotify) recently!{{end}}
 * Recent Book Series {{range .Site.Data.sharables.kavita}}
-  * [{{.name}}]({{.link}}){{else}}
+  * [{{ .name }}]({{ .link }}) ({{ printf "%.0f%%" (mul (.completion_progress | default 0) 100)}} complete){{else}}
   * No currently-read books (tracked on Kavita) recently!{{end}}
