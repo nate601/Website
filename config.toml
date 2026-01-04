@@ -60,6 +60,6 @@ mainSection = ['post']
 [Languages.en-us.params]
 goToTop = true
 [Languages.en-us.params.author]
-intro = "Nate601's Blag"
+intro = "Nathan's Nuggets"
 name = "Nathan Button"
 description = "Please see below for my delusional ramblings!"
