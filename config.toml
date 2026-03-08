@@ -62,4 +62,5 @@ goToTop = true
 [Languages.en-us.params.author]
 intro = "Nathan's Nuggets"
 name = "Nathan Button"
+email = "nathan@nate601.me"
 description = "Please see below for my delusional ramblings!"
