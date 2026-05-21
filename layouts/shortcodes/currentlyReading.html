@@ -1,0 +1,3 @@
+{{range .Site.Data.sharables.kavita}}
+* [{{ .name }}]({{ .link }}) ({{ printf "%.0f%%" (mul (.completion_progress | default 0) 100)}} complete){{else}}
+* No currently-read books (tracked on Kavita) recently!{{end}}

@@ -1,0 +1,13 @@
+<details>
+<summary><b>Click to Expand the Completed Books List</b></summary>
+<table>
+  <tr><th>Name</th></tr>
+  {{range .Site.Data.completedBooks | collections.Reverse}}
+  <tr>
+  <td>
+    {{.name}}
+  </td>
+  </tr>
+  {{end}}
+</table>
+</details>
