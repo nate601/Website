@@ -32,6 +32,10 @@ weight = 200
 name = "GitHub"
 url = "https://github.com/nate601"
 weight = 300
+[[menu.main]]
+name= "Reading List"
+url = "/completed-books"
+weight = 400
 
 [Languages.en-us]
 languageName = "English"
