@@ -1,12 +1,12 @@
 <details>
 <summary><b>Click to Expand the Completed Books List</b></summary>
 <table>
-  <tr><th>Name</th></tr>
+  <tr><th>Series Name</th><th>Volume Name</th></tr>
   {{range .Site.Data.completedBooks | collections.Reverse}}
+  {{$link:=index (.series.metadata.webLinks) 0}}
   <tr>
-  <td>
-    {{.name}}
-  </td>
+      <td><a href="{{$link}}">{{.series.name}}</a></td>
+      <td>{{.volume.name}}</td>
   </tr>
   {{end}}
 </table>
