@@ -1,5 +1,4 @@
 baseurl = "/"
-languageCode = "en-US"
 title = "Nathan's Nuggets"
 theme = "hugo-blog-awesome"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -37,15 +36,15 @@ name= "Reading List"
 url = "/completed-books"
 weight = 400
 
-[Languages.en-us]
-languageName = "English"
-languageCode = 'en-US'
-contentDir = "content"
-weight = 1
-
-
 [params]
 description = "Nathan's Nuggets"
+goToTop = true
+
+[params.author]
+intro = "Nathan's Nuggets"
+name = "Nathan Button"
+email = "nathan@nate601.me"
+description = "Please see below for my delusional ramblings!"
 
 # options for highlight.js (version, additional languages, and theme)
 highlightjsVersion = "9.12.0"
@@ -61,10 +60,3 @@ favicon = "favicon.ico"
 rssFeedDescription = "full"
 mainSection = ['post']
 
-[Languages.en-us.params]
-goToTop = true
-[Languages.en-us.params.author]
-intro = "Nathan's Nuggets"
-name = "Nathan Button"
-email = "nathan@nate601.me"
-description = "Please see below for my delusional ramblings!"
