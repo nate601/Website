@@ -28,10 +28,12 @@ unsaved-changes-stash:
   #!/usr/bin/env bash
   cd {{websiteDir}}
   git stash
+  exit 0
 unsaved-changes-pop:
   #!/usr/bin/env bash
   cd {{websiteDir}}
   git stash pop
+  exit 0
 
 
 
