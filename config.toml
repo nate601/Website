@@ -60,3 +60,5 @@ favicon = "favicon.ico"
 rssFeedDescription = "full"
 mainSection = ['post']
 
+[security]
+allowContent = ['.*']
